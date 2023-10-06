@@ -25,13 +25,18 @@ public class CommandExample extends JavaPlugin implements Listener {
     public void onFriendMessageReceive(MiraiFriendMessageEvent e){
         if(e.getMessage().equals("在线人数")) {
             MiraiBot.getBot(e.getBotID()).getFriend(e.getSenderID()).sendMessage("当前在线人数：" + Bukkit.getServer().getOnlinePlayers().size()+"人");
-        }
+                                }
     }
 
     @EventHandler
     public void onGroupMessageReceive(MiraiGroupMessageEvent e){
         if(e.getMessage().equals("在线人数")) {
-            MiraiBot.getBot(e.getBotID()).getGroup(e.getGroupID()).sendMessage("当前在线人数：" + Bukkit.getServer().getOnlinePlayers().size()+"人");
+            MiraiBot.getBot(e.getBotID()).getGroup(e.getGroupID()).sendMessage("当前在线人数：" + Bukkit.getServer().getOnlinePlayer
+            sd
+            onFriendMessageReceives().size()+"人");
         }
     }
 }
+d
+onFriendMessageReceivef
+d
